@@ -93,3 +93,13 @@ h1 {
   height: 25px;
   width: 25px;
 }
+
+/* Esercizio 6 */
+
+.ex-6 img {
+  height: 250px;
+}
+
+.ex-6 img:hover {
+  filter: grayscale(1);
+}
