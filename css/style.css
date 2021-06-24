@@ -28,11 +28,13 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* Dimensioni quadrato */
 .square {
   height: 100px;
   width: 100px;
 }
 
+/* Esercizio 1 */
 .one {
   border: 1px solid red;
   transition: 2s;
@@ -42,6 +44,7 @@ h1 {
   background-color: red;
 }
 
+/* Esercizio 2 */
 .two {
   background-color: red;
   transition: 2s;
@@ -51,6 +54,7 @@ h1 {
   width: 100%;
 }
 
+/* Esercizio 3 */
 .three {
   background-color: red;
   transition: 1s;
@@ -58,4 +62,14 @@ h1 {
 
 .three:hover {
   border-radius: 50%;
+}
+
+/* Esercizio 4 */
+.four {
+  transition: 1s;
+  background-color: red;
+}
+
+.four:hover {
+  opacity: 0;
 }
