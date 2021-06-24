@@ -78,8 +78,8 @@ h1 {
 
 /* Esercizio 5 */
 .ex-5 {
-  height: 50px;
-  width: 50px;
+  height: 75px;
+  width: 75px;
   background-color: red;
   transition: 1s;
 }
@@ -90,14 +90,15 @@ h1 {
 }
 
 .ex-5:active {
-  height: 25px;
-  width: 25px;
+  height: 50px;
+  width: 50px;
 }
 
 /* Regole img */
 .ex-6 img,
 .ex-7 img,
-.ex-8 img {
+.ex-8 img,
+.ex-9 img {
   width: 500px;
   transition: 1s;
 }
@@ -116,4 +117,12 @@ h1 {
 .ex-8 img:hover {
   filter: grayscale(0.5) sepia(0.5);
   border-radius: 20px;
+}
+
+/* Esercizio 9 */
+
+.ex-9 img:hover {
+  filter: grayscale(0.5) sepia(0.5);
+  border-radius: 20px;
+  transform: scale(1.5);
 }
