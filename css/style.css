@@ -186,6 +186,8 @@ h1 {
   background: #f5f5f5;
   width: 60px;
   height: 20px;
+
+  /* background-color: red; */
 }
 .ex-12-bottom-white,
 .ex-13-bottom-white {
@@ -200,7 +202,7 @@ h1 {
 /* Soluzione 12 */
 
 .ex-12-button:hover .ex-12-top-white {
-  animation: moveTop 2s linear;
+  animation: moveTop 2s linear infinite;
 }
 
 @keyframes moveTop {
@@ -208,7 +210,7 @@ h1 {
     left: 10%;
   }
   50% {
-    left: calc(100% - 70px);
+    left: 65%;
   }
   100% {
     left: 10%;
@@ -216,14 +218,14 @@ h1 {
 }
 
 .ex-12-button:hover .ex-12-bottom-white {
-  animation: moveBottom 2s linear;
+  animation: moveBottom 2s linear infinite;
 }
 @keyframes moveBottom {
   0% {
     right: 20%;
   }
   50% {
-    right: calc(100% - 70px);
+    right: 65%;
   }
   100% {
     right: 20%;
@@ -231,3 +233,68 @@ h1 {
 }
 
 /* Soluzione 13 */
+
+/* Top */
+.ex-13-button:hover .ex-13-top-white {
+  animation: moveTop100 2s linear infinite;
+}
+
+@keyframes moveTop100 {
+  0% {
+    left: 10%;
+    top: -10px;
+  }
+  20% {
+    left: 80%;
+    top: -10px;
+  }
+  40% {
+    left: 80%;
+    top: 50px;
+  }
+  60% {
+    left: -20px;
+    top: 50px;
+  }
+  80% {
+    left: -20px;
+    top: -10px;
+  }
+  100% {
+    left: 10%;
+    top: -10px;
+  }
+}
+
+/* Bottom */
+
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: moveBottom100 2s linear infinite;
+}
+
+@keyframes moveBottom100 {
+  0% {
+    right: 10%;
+    bottom: -10px;
+  }
+  20% {
+    right: 80%;
+    bottom: -10px;
+  }
+  40% {
+    right: 80%;
+    bottom: 50px;
+  }
+  60% {
+    right: -20px;
+    bottom: 50px;
+  }
+  80% {
+    right: -20px;
+    bottom: -10px;
+  }
+  100% {
+    right: 10%;
+    bottom: -10px;
+  }
+}
