@@ -94,12 +94,20 @@ h1 {
   width: 25px;
 }
 
-/* Esercizio 6 */
-
-.ex-6 img {
-  height: 250px;
+/* Regole img */
+.ex-6 img,
+.ex-7 img {
+  width: 500px;
+  transition: 1s;
 }
 
+/* Esercizio 6 */
 .ex-6 img:hover {
   filter: grayscale(1);
+}
+
+/* Esercizio 7 */
+
+.ex-7 img:hover {
+  filter: grayscale(0.5) sepia(0.5);
 }
