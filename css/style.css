@@ -39,7 +39,6 @@ h1 {
 }
 
 .one:hover {
-  transition: background-color 2s;
   background-color: red;
 }
 
@@ -49,6 +48,14 @@ h1 {
 }
 
 .two:active {
-  transition: width 2s;
   width: 100%;
+}
+
+.three {
+  background-color: red;
+  transition: 1s;
+}
+
+.three:hover {
+  border-radius: 50%;
 }
