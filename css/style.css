@@ -127,13 +127,37 @@ h1 {
 }
 
 /* Esercizio 10 */
-.ex-10-icon {
-  animation: spin 1s linear infinite;
+.ex-10 i,
+.ex-11 i {
   font-size: 60px;
+}
+
+.ex-10 i {
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
   0% {
     transform: rotate(1turn);
+  }
+}
+
+/* Esercizio 11 */
+
+.ex-11 i:hover {
+  animation: spin2 1s linear infinite;
+}
+
+@keyframes spin2 {
+  100% {
+    transform: rotate(0);
+  }
+
+  80% {
+    transform: rotate(calc(360deg * 3 / 4));
+  }
+
+  100% {
+    transform: rotate(0);
   }
 }
